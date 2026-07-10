@@ -6,14 +6,14 @@
 }
 
 .common-btn {
-  background: #02020E;
+  background: #172df3;
   color: white;
   border-radius: 5px;
   outline: none;
   border: none;
   padding: 9px 17px;
   font-weight: bold;
-  border: 1px solid #02020E;
+  border: 1px solid #172df3;
 }
 .common-btn:hover {
   background: #ffffff;
@@ -49,5 +49,51 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: none;
-  color: #2b58ee;
+  color: #172df3;
 }
+
+
+
+/* Hero section starts */
+.hero {
+  width: 100vw;
+  min-height: calc(100vh - 70px);
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-image: url("./assets/miguel-henriques-RfiBK6Y_upQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 90px 0;
+}
+.hero div {
+  width: 805px;
+  /* background: #d63535; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.hero div h1 {
+  font-size: 72px;
+  color: white;
+  font-weight: bond;
+}
+.hero #connect{
+  color: #172df3;
+  font-style: italic;
+}
+.hero div p {
+  font-size: 20px;
+  color: #d1cece;
+  width: 740px;
+  line-height: 22px;
+}
+
+
+
