@@ -7,7 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/code.png" type="image/x-icon" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,15 +20,15 @@
     <!--------- Header Section starts ---------->
     <header>
       <nav>
-        <img src="./assets/logo.png" alt="logo" />
+        <img src="./assets/logo.png" alt="DevConf logo" />
         <ul>
-          <li><a href="#">Speakers</a></li>
+          <li><a href="#speakers">Speakers</a></li>
           <li><a href="#">Schedule</a></li>
           <li><a href="#">Tracks</a></li>
           <li><a href="#">Venue</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
-        <button class="common-btn">Register Now</button>
+        <a href="#pricing" class="common-btn">Register Now</a>
       </nav>
     </header>
 
@@ -44,15 +44,15 @@
             hands-on workshops, and meaningful connections.
           </p>
         </div>
-        <button class="common-btn">Register Now</button>
+        <a href="#pricing" class="common-btn">Register Now</a>
       </section>
 
       <!------ Speakers Section starts ----->
-      <section class="speakers">
+      <section class="speakers" id="speakers">
         <h2>Meet the Speakers</h2>
         <div class="speaker-grid">
           <div class="card">
-            <img src="./assets/Sam Altman.jpg" alt="" />
+            <img src="./assets/Sam Altman.jpg" alt="Sam Altman's photo" />
             <div class="card-content">
               <span class="topic">AI / ML</span>
               <h3>Sam Altman</h3>
@@ -61,7 +61,7 @@
           </div>
 
           <div class="card">
-            <img src="./assets/Susan Cain.jpg" alt="" />
+            <img src="./assets/Susan Cain.jpg" alt=" Susan Cain's photo" />
             <div class="card-content">
               <span class="topic">PSYCHOLOGY</span>
               <h3>Susan Cain</h3>
@@ -70,7 +70,10 @@
           </div>
 
           <div class="card">
-            <img src="./assets/Michelle Obama.jpg" alt="" />
+            <img
+              src="./assets/Michelle Obama.jpg"
+              alt="Michelle Obama's photo"
+            />
             <div class="card-content">
               <span class="topic">LEADERSHIP</span>
               <h3>Michelle Obama</h3>
@@ -79,7 +82,10 @@
           </div>
 
           <div class="card">
-            <img src="assets/Andrew Huberman.jpg" alt="" />
+            <img
+              src="assets/Andrew Huberman.jpg"
+              alt="Andrew Huberman's photo"
+            />
             <div class="card-content">
               <span class="topic">NEUROSCIENCE</span>
               <h3>Andrew Huberman</h3>
@@ -90,7 +96,7 @@
       </section>
 
       <!------ Pricing Section starts ----->
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <div class="pricing-header">
           <h2>Secure your Spot</h2>
           <p>Early-bird pricing ends August 15, 2026.</p>
@@ -235,17 +241,23 @@
         </div>
         <div class="faq-contact-right">
           <h2>Contact Us</h2>
-          <div class="input-container">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
+          <form class="input-container">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
             <textarea
               name="message"
               id="message"
               rows="5"
               placeholder="Your Message"
+              required
             ></textarea>
-            <button class="common-btn">Send Message</button>
-          </div>
+            <button type="submit" class="common-btn">Send Message</button>
+          </form>
         </div>
       </section>
     </main>
