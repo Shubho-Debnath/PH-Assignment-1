@@ -152,7 +152,7 @@ nav ul li a:hover {
   gap: 30px;
 }
 .card {
-  background: #03081434;
+  background: #14070334;
   backdrop-filter: blur(22px);
   border-radius: 15px;
   overflow: hidden;
@@ -220,12 +220,12 @@ nav ul li a:hover {
 .package-card {
   max-width: 370px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.021);
+  background: rgba(255, 255, 255, 0.062);
   backdrop-filter: blur(12px);
   border-radius: 8px;
   overflow: hidden;
   padding: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.158);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075);
   transition: all ease-in-out 0.3s;
 }
