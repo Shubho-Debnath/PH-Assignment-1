@@ -15,6 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!--------- Header Section starts ---------->
@@ -44,7 +52,9 @@
             hands-on workshops, and meaningful connections.
           </p>
         </div>
-        <a href="#pricing" class="common-btn">Register Now</a>
+        <button id="hero-register-button" class="common-btn">
+          Register Now
+        </button>
       </section>
 
       <!------ Speakers Section starts ----->
@@ -61,35 +71,35 @@
           </div>
 
           <div class="card">
-            <img src="./assets/Susan Cain.jpg" alt=" Susan Cain's photo" />
+            <img
+              src="./assets/Charity Majors.jpg"
+              alt="Charity Majors's photo"
+            />
             <div class="card-content">
-              <span class="topic">PSYCHOLOGY</span>
-              <h3>Susan Cain</h3>
-              <p>Author of Quiet & Speaker on Leadership</p>
+              <span class="topic">Cloud & DevOps</span>
+              <h3>Charity Majors</h3>
+              <p>Co-Founder & CTO, Honeycomb</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/Eva Galperin.jpg" alt="Eva Galperin's photo" />
+            <div class="card-content">
+              <span class="topic">Security</span>
+              <h3>Eva Galperin</h3>
+              <p>Director of Cybersecurity, Electronic Frontier Foundation</p>
             </div>
           </div>
 
           <div class="card">
             <img
-              src="./assets/Michelle Obama.jpg"
-              alt="Michelle Obama's photo"
+              src="./assets/Guillermo Rauch.jpg"
+              alt="Guillermo Rauch's photo"
             />
             <div class="card-content">
-              <span class="topic">LEADERSHIP</span>
-              <h3>Michelle Obama</h3>
-              <p>Author & Former First Lady</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="assets/Andrew Huberman.jpg"
-              alt="Andrew Huberman's photo"
-            />
-            <div class="card-content">
-              <span class="topic">NEUROSCIENCE</span>
-              <h3>Andrew Huberman</h3>
-              <p>Professor, Stanford School of Medicine</p>
+              <span class="topic">FRONTNED</span>
+              <h3>Guillermo Rauch</h3>
+              <p>CEO, Vercel & Creator of Next.js</p>
             </div>
           </div>
         </div>
@@ -99,12 +109,12 @@
       <section class="pricing" id="pricing">
         <div class="pricing-header">
           <h2>Secure your Spot</h2>
-          <p>Early-bird pricing ends August 15, 2026.</p>
+          <p class="subheading">Early-bird pricing ends August 15, 2026.</p>
         </div>
         <div class="package-card-container">
           <div class="package-card">
             <p>STANDARD</p>
-            <h2>$399</h2>
+            <h3>$399</h3>
             <p>per person</p>
             <hr />
             <div class="package-offer-container">
@@ -139,7 +149,7 @@
 
           <div class="package-card pro-package">
             <p>PRO</p>
-            <h2>$749</h2>
+            <h3>$749</h3>
             <p>per person</p>
             <hr class="pro-hr" />
             <div class="package-offer-container">
@@ -174,7 +184,7 @@
 
           <div class="package-card">
             <p>TEAM</p>
-            <h2>$5,999</h2>
+            <h3>$5,999</h3>
             <p>up to 10 people</p>
             <hr />
             <div class="package-offer-container">
@@ -209,69 +219,112 @@
         </div>
       </section>
 
-      <!------ FAQ & Contact Section starts ----->
-      <section class="faq-contact">
-        <div class="faq-contact-left">
-          <h2>FAQ</h2>
-          <div>
-            <details>
-              <summary>Where is the event located?</summary>
-              <p>Dhaka International Convention Center.</p>
-            </details>
-            <details>
-              <summary>Will sessions be recorded?</summary>
-              <p>Yes. All attendees receive access to session recordings.</p>
-            </details>
-            <details>
-              <summary>Can I request a refund?</summary>
-              <p>Refunds are available up to 14 days before the event.</p>
-            </details>
-            <details>
-              <summary>Is lunch included?</summary>
-              <p>Lunch and coffee breaks are included with every ticket.</p>
-            </details>
-            <details>
-              <summary>Is parking available at the venue?</summary>
-              <p>
-                Yes. Free parking is available for all attendees throughout the
-                event.
-              </p>
-            </details>
-          </div>
+      <!------ Placeholder Section starts ----->
+
+      <section class="tracks-section" id="tracks">
+        <div class="track-header">
+          <h2>Explore Conference Tracks</h2>
+          <p class="subheading">
+            Discover expert-led sessions across today's most important
+            technologies and build skills that shape the future of software
+            development.
+          </p>
         </div>
-        <div class="faq-contact-right">
-          <h2>Contact Us</h2>
-          <form class="input-container">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="message"
-              id="message"
-              rows="5"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <button type="submit" class="common-btn">Send Message</button>
-          </form>
+
+        <div class="tracks-grid">
+          <article class="track-card">
+            <span class="track-icon" aria-hidden="true">🤖</span>
+            <h3 class="track-name">AI &amp; Machine Learning</h3>
+            <p class="track-sessions">12 Sessions</p>
+            <p class="track-description">
+              Dive into neural networks, generative models, and applied AI
+              workflows. Learn how leading teams deploy machine learning at
+              scale in production environments.
+            </p>
+          </article>
+
+          <article class="track-card">
+            <span class="track-icon" aria-hidden="true">☁️</span>
+            <h3 class="track-name">Cloud &amp; DevOps</h3>
+            <p class="track-sessions">10 Sessions</p>
+            <p class="track-description">
+              Master container orchestration, CI/CD pipelines, and
+              infrastructure automation. Explore strategies for building
+              resilient systems that scale effortlessly.
+            </p>
+          </article>
+
+          <article class="track-card">
+            <span class="track-icon" aria-hidden="true">🎨</span>
+            <h3 class="track-name">Frontend Engineering</h3>
+            <p class="track-sessions">14 Sessions</p>
+            <p class="track-description">
+              Craft immersive user interfaces with modern frameworks and
+              performance-first techniques. Understand how design systems keep
+              large products consistent.
+            </p>
+          </article>
+
+          <article class="track-card">
+            <span class="track-icon" aria-hidden="true">⚙️</span>
+            <h3 class="track-name">Backend Systems</h3>
+            <p class="track-sessions">11 Sessions</p>
+            <p class="track-description">
+              Architect scalable APIs, microservices, and distributed systems.
+              Gain insight into database design patterns that power high-traffic
+              applications.
+            </p>
+          </article>
+
+          <article class="track-card">
+            <span class="track-icon" aria-hidden="true">🛡️</span>
+            <h3 class="track-name">Cybersecurity</h3>
+            <p class="track-sessions">9 Sessions</p>
+            <p class="track-description">
+              Strengthen your defenses against modern threats through hands-on
+              labs. Examine real-world breach case studies and zero-trust
+              architecture principles.
+            </p>
+          </article>
+
+          <article class="track-card">
+            <span class="track-icon" aria-hidden="true">📊</span>
+            <h3 class="track-name">Data Engineering</h3>
+            <p class="track-sessions">8 Sessions</p>
+            <p class="track-description">
+              Build robust data pipelines and warehousing solutions for
+              analytics at scale. Explore streaming architectures that power
+              real-time decision making.
+            </p>
+          </article>
         </div>
       </section>
     </main>
 
     <!---------  Footer starts ---------->
     <footer>
-      <div class="footer-child-div">
-        <div class="footer-right-div">
-          <p>© 2026 DevConf. All rights reserved.</p>
+      <div class="footer-container">
+        <div class="footer-top">
+          <img
+            src="./assets/footer-logo.png"
+            alt="DevConf Logo"
+            class="footer-logo"
+          />
+          <div class="social-links">
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.intagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://www.x.com"><i class="fa-brands fa-twitter"></i></a>
+          </div>
         </div>
-        <div class="footer-left-div">
-          <a href="#" class="footer-anchor">Privacy Policy</a>
-          <a href="#" class="footer-anchor">Terms of Service</a>
-        </div>
+        <hr />
+        <p class="copyright">© 2026 DevConf. All rights reserved.</p>
       </div>
     </footer>
   </body>
